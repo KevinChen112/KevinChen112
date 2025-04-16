@@ -11,10 +11,11 @@ def post_request(url,payload,headers):
     else:
         print(f"请求失败，状态码: {response.status_code}")
 
-# url2 = 'https://helmet.real2tech.net/api/passage/projectOrgan/getOrganTree?projectId=1867092082510057474'
-# response = requests.get(url2, headers=headers)
-# if response.status_code == 200:
-#     data = response.json()  # 如果响应是 JSON 格式
-#     print(data)
-# else:
-#     print(f"请求失败，状态码: {response.status_code}")
+url2 = 'https://helmet.real2tech.net/api/passage/projectOrgan/getOrganTree?projectId=1867092082510057474'
+response = requests.get(url2, headers=headers)
+if response.status_code == 200:
+    data = response.json()  # 如果响应是 JSON 格式
+    print(data)
+else:
+    print(f"请求失败，状态码: {response.status_code}")
+    print('123454353464564562153153123153214')
